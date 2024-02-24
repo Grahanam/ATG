@@ -1,0 +1,228 @@
+@import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css");
+
+*,body{
+    padding:0px;
+    margin:0px;
+    width:100%
+
+}
+
+#main{
+    width:100%
+}
+
+.navbar{
+    box-shadow: 0px 1px 2px 0px #0000001F;
+    height: 24px;
+    
+}
+
+
+.mainbanner{
+    position: relative;
+    background-image:
+                linear-gradient(45deg,
+                    rgba(0, 0, 0, 0.452),
+                    rgba(0, 0, 0, 0.452)), 
+                    url('https://s3-alpha-sig.figma.com/img/756e/302b/7d56a759ac56bc165f65c40094aba4e8?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=E3by9vNMc6lKEWdzJ421PRMV-~ycR050iFi~-RpMPnHlOgPxlykMqxnZXvPvovvipyN6fN9xVFMTUagg8YMOtkXYN4XxtCK8-j~8Ln4eztihYnP9gr523yTY1yEqvWRmGR-TCbDh6WXsLDqT08ntzKk0kP1lChoUXAhwkzjx~jjasPzW4K0xtKqceEcpLv0qOx37T-5MRmRF-~BtLb90VezVJlwfAHEyK9nauSr395z4TpBJfNRbKz1gaKv6r85PSBdMnxA7OpOrmJOGxeNViYdy7Oowy94YNdTNewUsWnaOUKWtoiB6hLcgC8A4IZ4ik61L9mT5HH~pZSlS5-d-Rw__');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    padding: 0;
+    width: 100%;
+    color:#FFFFFF; 
+}
+
+.Content{
+    max-width: 1040px;
+    margin:0px auto;
+}
+
+.sticky_heading{
+    height: 80;
+}
+
+.postimg{
+    background-image: url('https://s3-alpha-sig.figma.com/img/8f0b/5f52/59515bfc8d2d4ff8928be097376153e9?Expires=1709510400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aq79hyrRCea1e2ZOkWrEMy67Pz6ayLDsmkJMm~r40f-8R3T8prtqoxD-SDk8ttaFHBVcqOGpG1XO~w9ybR-RYy5ZmxpEGN6Ua7orma4lF5RfSnI5329D~aMXRtb5rtbF4XpU85sEdCSTjfhyvC3uaZCFypLFao0e6zrFPNeBW6hSB3mSU2IByO69CvASWUsraFmTQYsiONkOmlDPK-2TzvpRSAul-UuGSKzXQPHHksJYILvpqPvcHT2HH4UmmLW3FSKQOb5b670SG8cxs5bsa8drqsvNg65-56lsF~CLDmQfr6ohJvZ7mCE0Np55an8mTwoM76uTYEKjQjTFMfvISQ__');
+}
+
+.floatbtn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 54px;
+    height: 54px; 
+    border-radius: 50%;
+    color: #FFFFFF; 
+    background:linear-gradient(100deg,#FF5C5C,#F0568A);
+    font-size: 24px;
+    position:fixed;
+    bottom: 20px;
+    right: 20px;
+    box-shadow: 1px 2px 4px 1px #0000002E;
+
+}
+
+.menubtn{
+    color: #8A8A8A;
+    border:0;
+    border-bottom:1px solid #E0E0E0;
+    white-space: nowrap;
+
+}
+.menubtn_active{
+    color: #000000;
+    border-bottom:1px solid #000000;
+}
+.menubtn:active,
+.menubtn:focus {
+    background-color: transparent;
+    outline: none!important; 
+    box-shadow: none !important;
+    color: #000000;
+    border-color: transparent;
+    border-bottom-color: #000000; /* Change border color */
+}
+
+.custominput{
+    font-size: 13px;
+
+}
+.form_btn{
+    font-size:13px;
+}
+.modal_heading{
+    font-size: 18px;
+}
+.post_heading{
+    font-size:12px;
+}
+.post_tag{
+    font-size: 10px;
+}
+.post_contents{
+    font-size: 10px;
+}
+.post_info{
+    font-size:10px;
+}
+.post_btn{
+    font-size: 10px;
+}
+.profile_title{
+    font-size: 10px;
+}
+.profile_img{
+    width:37px ;
+    height:37px ;
+}
+
+
+/* .custom_modal{
+    bottom: 0; position: absolute; width: 100%; margin: 0; 
+
+} */
+
+@media screen and (max-width:767px){
+    .destopnav{
+        display:none
+    }
+    .mobilenav{
+        display: block;
+    }
+    .mainbanner{
+        height: 236px;
+    }
+    .banner_title{
+        font-size: 16px;
+        font-weight: 700;
+    }
+    .banner_subtitle{
+        font-size: 11px;
+        
+    }
+    .side_content{
+        display: none;
+    } 
+    .custom_modal{
+        bottom: 0; 
+        position: absolute;
+        width: 100%;
+        max-width: 767px; 
+        margin: 0;
+    
+    }
+    
+    /* .mainbanner{
+        aspect-ratio: 3/2;
+    } */
+}
+
+@media only screen and (min-width:768px){
+    .navbar{
+        height:76px
+    }
+    .mobilenav{
+        display: none;
+    }
+    .destopnav{
+        display:block;
+    }
+    .mainbanner{
+        height:440px;
+    }
+    .join_grp_mob{
+        display: none;
+    }
+    
+    .banner_title{
+        font-size: 36px;
+        line-height: 46.8px;
+        font-weight: 700;
+    }
+    .banner_subtitle{
+        font-size: 18px;
+        line-height: 23.4px;
+    }
+    .custom_modal{
+        /* bottom: 0; position: absolute; width: 100%; margin: 0; */
+        position:relative; 
+    
+    }
+    .modal_heading{
+        font-size: 24px;
+        font-weight: 700;
+    }
+    .custominput{
+        font-size: 15px;
+    }
+    .form_btn{
+        font-size:14px;
+    }
+    .post_heading{
+        font-size:22px;
+    }
+    .post_tag{
+        font-size: 18px;
+    }
+    .post_content{
+        font-size: 19px;
+        color: #5C5C5C;
+    }
+    .post_info{
+        font-size:15px;
+    }
+    .post_btn{
+        font-size: 13px;
+    }
+    .profile_title{
+        font-size: 18px;
+    }
+    .profile_img{
+        width:48px ;
+        height:48px ;
+    }
+
+}
+
